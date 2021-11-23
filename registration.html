@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Registration</title>
+        <style>
+    h1{
+        font-family: 'Times New Roman', Times, serif; 
+        font-size: 25pt;         
+        font-style: normal; 
+        font-weight: bold; 
+        color:blue;
+        text-align: center; 
+        text-decoration: underline
+      }
+      table{
+        font-family: 'Times New Roman', Times, serif; 
+        color:white; 
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20pt; 
+        font-style: normal;
+        font-weight: bold;
+        text-align: center; 
+        background-color: blue; 
+        border-collapse: collapse; 
+        border: 2px solid navy
+      }
+      table.inner{
+        border: 0px
+      }
+      </style>
+	</head>
+    
+	<body>
+		<h1>Registration Form</h1>
+		<form>
+			<table text-align="center" cellpadding = "10"></tablealign>
+
+			<tr><td>First Name:</td><td><input type="text"/></td></tr>
+            
+			<tr><td>Middle Name:</td><td><input type="text"/></td></tr>
+
+            <tr><td>Family Name:</td><td><input type="text"/></td></tr>
+
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>Male: <input type="radio" name="gender" value="male">
+                  Female: <input type="radio" name="gender" value="female"></td>
+            </tr>
+
+            <tr><td>Email Address:</td><td><input type="text"/></td></tr>
+
+            <tr><td>Home Address:</td><td><input type="text"/></td></tr>
+
+            <tr>
+                <td><label for="hobbies">Hobbies:</label></td>
+                <td><input type="checkbox" name="hobbies" value="computer games">Computer Games
+                <input type="checkbox" name="hobbies" value="playing music instruments">Playing Music Instruments</td>
+            </tr>
+            <tr>
+                <td><label for="hobbies"></label></td>   
+                <td><input type="checkbox" name="hobbies" value="cooking">Cooking
+                <input type="checkbox" name="hobbies" value="drawing">Drawing</td>
+            </tr>
+
+            <tr>
+                <td><label for=”color”><label for=”color”>Favorite Color:</label>
+                    <td><select name=”color” id=”color”>
+                    <option value=””></option>
+                    <option value=”blue” class=”blue”>blue</option>
+                    <option value=”red” class=”red”>red</option>
+                    <option value=”green”>green</option>
+                    <option value=”yellow” class=”yellow”>yellow</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="ay something about yourself">Say something about yourself:</label><td>
+                    <textarea name="about" id="about"></textarea></td>
+            </tr>
+
+			<tr><td colspan="2" text-align="center"><input type="button" value="Submit"> <input type="reset" value="Clear"></td></tr>
+			</table>
+		</form>
+	</body>
+</html>
